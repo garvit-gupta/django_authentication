@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+	<head>
+		 <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+		<title>Home Page</title>
+	</head>
+<body>
+	<div id='main'>
+	<h2>
+	<p id='head'>Welcome</p>
+	</h2>
+	<div class='buttons'>	
+		<div id='log_home'>
+			<form method='get' action=''>{% csrf_token %}
+			<a href="{% url 'login' %}">	
+			<input type='button' value='Login' />
+			</a>
+			</form>
+		</div>
+		<div id='reg_home'>
+			<form method='POST' action=''>{% csrf_token %}
+			<a href="{% url 'register' %}">	
+			<input type='button' value='Register' />
+			</a>
+
+			</form>
+		</div>
+		<p id='error'>{{ message }}</p>
+	</div>
+
+</div>
+
+</body>
+</html>

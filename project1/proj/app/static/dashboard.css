@@ -1,0 +1,26 @@
+body{
+	font-family: sans-serif;
+	background-color: #F8F8FF;
+}
+
+#login_text{
+	position:relative;
+	margin-left: 40%;
+	margin-top: 15%;
+}
+
+a{
+	text-decoration: none;
+	height:40px;
+	width:100px;
+	text-align: center;
+	margin-left: 47%;
+	margin-top: 3%;
+}
+
+input[type=button]{
+	height:40px;
+	width:100px;
+	text-align: center;
+	margin-top: 3%;
+}

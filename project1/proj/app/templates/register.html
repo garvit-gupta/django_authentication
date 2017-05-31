@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'register.css' %}" />
+    <title>Register</title>
+  </head>
+<body>
+  <div id='main'>
+<h2 id='head'>Registration Form</h2>
+  {% block content %}
+    <form method="post">
+      {% csrf_token %}
+      {% for field in form %}
+        <p class='fields'>
+          {{ field.label_tag }}
+          <br>
+          {{ field }}
+          {% if field.help_text %}
+            <small style="color: grey">{{ field.help_text }}</small>
+          {% endif %}
+          {% for error in field.errors %}
+            <p style="color: red" id='error'>{{ error }}</p>
+          {% endfor %}
+        </p>
+      {% endfor %}
+      <button type="submit" id='register'>Register</button>
+    </form>
+  {% endblock %}
+</div>
+</body>
+</html>

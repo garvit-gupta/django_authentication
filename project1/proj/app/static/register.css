@@ -1,0 +1,43 @@
+body{
+		width:575px;
+		margin-top:7%;
+		margin-left:32%;
+		margin-right:32%;
+		font-family: sans-serif;
+		background-color: #F8F8FF;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+#main{
+	background-color:lightblue;
+	
+}
+#head{
+	background-color: #000d33;
+	color: #F8F8FF;
+	text-align: center;
+	height:50px;
+	padding-top: 7%;
+	line-height:20px;
+	margin-bottom: 5%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fields{
+	margin-top: 5%;
+	position:relative;
+	padding-left: 27%;
+}
+
+#register{
+	height:40px;
+	width:100px;
+	text-align: center;
+	position: relative;
+	margin-left: 40%;
+	margin-top: 5%;
+	margin-bottom: 7%
+}
+
+#error{
+	padding-left: 27%;
+}

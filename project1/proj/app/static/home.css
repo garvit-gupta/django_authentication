@@ -1,0 +1,63 @@
+body{
+	width:350px;
+	margin-top:12%;
+	margin-left:40%;
+	font-family: sans-serif;
+	background-color: #F8F8FF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#head{
+	background-color: #000d33;
+	color: #F8F8FF;
+	text-align: center;
+	height:45px;
+	padding-top: 8%;
+	line-height:20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buttons{
+	background-color: inherit;
+	padding-bottom: 8%;
+	padding-top: 5%;
+	height: 70px;
+}	
+
+#log_home{
+	margin-left: 15%;
+	margin-top:1%;
+	float: left;
+	
+}
+
+#reg_home{
+	text-align: right;
+	float: right;
+	margin-right: 15%;
+	margin-top: 1%; 
+}	
+
+
+a{
+	text-decoration: none;
+}
+
+input[type=button]{
+	height:40px;
+	width:100px;
+	text-align: center;
+}
+
+#main{
+	background-color:lightblue;
+}
+
+#error{
+	position: relative;
+	margin-left: 31%;
+	margin-top: 20%;
+	color:#000035;
+}
+
+
