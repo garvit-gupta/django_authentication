@@ -35,9 +35,16 @@ body{
 	position: relative;
 	margin-left: 40%;
 	margin-top: 7%;
-	margin-bottom: 10%
+	margin-bottom: 8%;
 }
 
 #error{
 	padding-left: 27%;
+}
+
+#forgot{
+	position:relative;
+	margin-left: 37%;
+	padding-bottom: 10%;
+	text-decoration: none;
 }

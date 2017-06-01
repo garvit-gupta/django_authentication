@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from .forms import *
-from django.contrib.auth import login, authenticate, logout
-from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import login, authenticate, logout,update_session_auth_hash
+from django.contrib.auth.forms import PasswordChangeForm
 from django.shortcuts import redirect,render_to_response
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect,HttpResponse
@@ -76,3 +76,18 @@ def logoutuser(request):
 # def passwordreset(request):
 #     if request.method='POST':
 #         return render(request,'pass_reset.html',{})
+def change_password(request):
+    if request.method=='POST':
+        form=PasswordChangeForm(data=request.POST,user=request.user)
+
+        if form.is_valid():
+            form.save()
+            update_session_auth_hash(request,form.user)
+            return redirect('dashboard')
+        else:
+            return redirect('change_password')
+    else:
+        form=PasswordChangeForm(user=request.user)
+        args={'form':form}
+        return render(request,'change_password.html',args)
+

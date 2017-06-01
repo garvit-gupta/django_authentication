@@ -113,3 +113,6 @@ STATIC_URL = '/static/'
 
 LOGOUT_REDIRECT_URL = '/'
 
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+
